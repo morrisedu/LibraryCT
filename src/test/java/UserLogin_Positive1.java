@@ -36,7 +36,7 @@ public class UserLogin_Positive1 {
         signInButton.submit();
 
         // Verify that there are 3 modules on the page
-        Thread.sleep(10000);
+        Thread.sleep(10000); // ToDo Change this to selenium wait instead
         List<WebElement> modules = chrome.findElements(By.className("card"));
 
         if (modules.size() == 3) {
